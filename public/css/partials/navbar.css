@@ -1,0 +1,45 @@
+.navbar {
+  background: #0d0d0d;
+  font-size: 17px;
+}
+
+.navbar-brand {
+  font-family: "Caveat";
+  font-size: 30px;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.navbar-nav .cart {
+  border-radius: 10px;
+  text-align: center;
+  width: 50px;
+  background-color: #f2b705;
+}
+
+.fa-shopping-cart {
+  color: #0d0d0d;
+  font-size: 25px;
+}
+
+.collapse-item {
+  right: 140px;
+  margin-top: 10px;
+  z-index: 1;
+  position: absolute;
+}
+
+.collapse-item .card {
+  font-weight: 700;
+  border-radius: 15px;
+  text-align: left;
+  width: 400px;
+}
+
+.collapse-item .card a {
+  font-weight: 700;
+  border-radius: 15px;
+  background-color: #f2b705;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/public/plugins/bootstrap/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/public/plugins/font-awesome/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/public/css/menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('./partials/navbar.ejs') %>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <form class="search-bar" action="" method="post">
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder="Cari menu..."
+              />
+              <button type="submit" class="btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+            <div class="row categories">
+              <% categories.forEach(category => { %>
+              <div class="col-12">
+                <a href="/menus/<%- category.name.toLowerCase() %>">
+                  <div
+                    class="card <% if (category_name === category.name.toLowerCase() ) { %> active <% } %>"
+                  >
+                    <div class="card-body"><%- category.name %></div>
+                  </div>
+                </a>
+              </div>
+              <% }) %>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="row menus">
+                <% menus.forEach(menu => { %>
+                    <div class="col-lg-12">
+                      <div class="card shadow">
+                        <a href=""
+                          ><img
+                            class="card-img-top"
+                            src="../public/images/<%- menu.photo %> "
+                            alt=""
+                        /></a>
+                        <div class="card-body">
+                          <%- menu.name %> <br />
+                          RP. <%- menu.price %>
+                        </div>
+                      </div>
+                    </div>
+                    <% }) %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./partials/footer.ejs')%>
+  </body>
+  <script src="/public/plugins/jquery/jquery.js"></script>
+  <script src="/public/plugins/bootstrap/js/bootstrap.js"></script>
+</html>

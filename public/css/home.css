@@ -1,0 +1,98 @@
+@import url("./partials/navbar.css");
+@import url("./partials/footer.css");
+
+body {
+  font-family: "Poppins";
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: 30px;
+}
+
+/* hero */
+#hero {
+  height: 500px;
+  position: relative;
+}
+
+.image-hero {
+  width: 100%;
+  height: 564px;
+  filter: brightness(60%);
+  object-fit: cover;
+}
+
+.headline {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.headline h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.headline p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.headline .btn {
+  font-weight: 700;
+  background-color: #f2b705;
+  padding: 8px 30px 8px 30px;
+  color: #0d0d0d;
+}
+
+.headline .btn:hover {
+  background-color: #f29f05;
+}
+
+#our-menus {
+  position: relative;
+  margin-top: 110px;
+}
+
+#our-menus h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #0d0d0d;
+}
+
+#our-menus .col-lg-4 {
+  margin-bottom: 30px;
+}
+
+.card {
+  height: 100%;
+  border-radius: 15px;
+  border: 0px;
+}
+
+.card h4 {
+  font-weight: 700;
+}
+
+.card img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card .btn {
+  font-weight: 700;
+  float: right;
+  padding: 7px 20px 7px 20px;
+  color: #0d0d0d;
+  background-color: #f2b705;
+}
+
+.card .btn:hover {
+  background-color: #f29f05;
+}

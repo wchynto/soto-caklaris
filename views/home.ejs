@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/plugins/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="public/plugins/font-awesome/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="public/css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('./partials/navbar.ejs') %>
+    <div class="wrapper">
+      <section id="hero">
+        <img
+          class="image-hero shadow"
+          src="public/images/soto_hero.jpg"
+          alt="soto-hero"
+        />
+        <div class="headline">
+          <h1>Dengan Rasa Terbaik!!!</h1>
+          <p>
+            Soto yang dibuat dari bahan-bahan alami dan berkualitas dengan resep
+            terbaik sehingga membuat soto dengan cita rasa khas dan luar biasa
+          </p>
+          <a name="" id="" class="btn" href="#our-menus" role="button"
+            >Pesan Sekarang</a
+          >
+        </div>
+      </section>
+      <div class="container">
+        <section id="our-menus">
+          <h2>Menu Kami</h2>
+          <div class="row">
+            <% menus.forEach(menu => { %>
+            <div class="col-lg-4">
+              <div class="card shadow">
+                <a href="">
+                  <img
+                    class="card-img-top"
+                    src="public/images/<%- menu.photo %>"
+                    alt=""
+                /></a>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-7">
+                      <h4><%- menu.name %></h4>
+                    </div>
+                    <div class="col-5">
+                      <a name="" id="" class="btn" href="#" role="button"
+                        >Order</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <% }) %>
+          </div>
+        </section>
+      </div>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+  <script src="public/plugins/jquery/jquery.js"></script>
+  <script src="public/plugins/bootstrap/js/bootstrap.js"></script>
+</html>

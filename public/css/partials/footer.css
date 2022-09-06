@@ -1,0 +1,36 @@
+footer {
+  width: 100%;
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+.footer-brand {
+  font-family: "Caveat";
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.footer-brand:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.footer-link {
+  color: #a6a6a6;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}

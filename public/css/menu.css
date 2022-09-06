@@ -1,0 +1,78 @@
+@import url("./partials/navbar.css");
+@import url("./partials/footer.css");
+
+body {
+  font-family: "Poppins";
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input[type="text"] {
+  border-radius: 15px 0px 0px 15px;
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
+
+.search-bar button {
+  border-radius: 0px 15px 15px 0px;
+  background: #f2b705;
+}
+
+.search-bar button:hover {
+  background: #f29f05;
+}
+
+.categories .card {
+  border-radius: 15px;
+  background-color: #ffe188;
+  margin-bottom: 10px;
+  border: 0px;
+}
+
+.categories .active {
+  background-color: #f2b705;
+}
+
+.categories .card-body {
+  color: #0d0d0d;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.categories a:hover {
+  text-decoration: none;
+}
+
+.menus .card {
+  height: 100%;
+  font-weight: 700;
+  border-radius: 15px;
+  border: 0px;
+}
+
+.menus .col-lg-6 {
+  margin-bottom: 30px;
+}
+
+.menus .card img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.menus .card-body {
+  font-size: 20px;
+}
